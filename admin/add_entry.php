@@ -80,10 +80,47 @@ include 'includes/header.php';
 
     <!-- TV Series Tab -->
     <div class="tab-pane fade" id="series" role="tabpanel" aria-labelledby="series-tab">
-        <div class="p-3 border border-top-0">
-            <p class="text-muted">Manual creation of TV Series with seasons and episodes is complex. Please use the <strong>Bulk Entry > TMDb ID</strong> feature to automatically generate a full TV series with all its seasons and episodes.</p>
-            <a href="bulk_entry.php" class="btn btn-primary">Go to Bulk Entry</a>
-        </div>
+        <form action="../api/add_entry_handler.php" method="POST" class="p-3 border border-top-0">
+            <input type="hidden" name="category" value="TV Series">
+            <div class="mb-3">
+                <label for="series_title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="series_title" name="title" required>
+            </div>
+            <div class="mb-3">
+                <label for="series_tmdb_id" class="form-label">TMDb ID (Optional)</label>
+                <input type="number" class="form-control" id="series_tmdb_id" name="tmdb_id">
+                 <div class="form-text">Provide a TMDb ID to allow for automatic server linking later.</div>
+            </div>
+            <div class="mb-3">
+                <label for="series_description" class="form-label">Description</label>
+                <textarea class="form-control" id="series_description" name="description" rows="3"></textarea>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="series_poster" class="form-label">Poster URL</label>
+                    <input type="url" class="form-control" id="series_poster" name="poster_url">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="series_thumbnail" class="form-label">Thumbnail URL</label>
+                    <input type="url" class="form-control" id="series_thumbnail" name="thumbnail_url">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label for="series_rating" class="form-label">Rating (e.g., 8.5)</label>
+                    <input type="number" step="0.1" class="form-control" id="series_rating" name="rating">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="series_year" class="form-label">Year</label>
+                    <input type="number" class="form-control" id="series_year" name="year">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="series_parental_rating" class="form-label">Parental Rating</label>
+                    <input type="text" class="form-control" id="series_parental_rating" name="parental_rating">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Add TV Series</button>
+        </form>
     </div>
 
     <!-- Live TV Tab -->
