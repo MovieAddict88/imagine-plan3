@@ -1,0 +1,21 @@
+# IDE and OS files
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+
+# Dependencies
+/vendor/
+/node_modules/
+
+# Configuration files
+includes/config.php
+
+# Lock files
+setup.lock
+package-lock.json
+composer.lock
+
+# Zip files
+Download17.zip
