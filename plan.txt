@@ -1,0 +1,87 @@
+Create a modern and fully pho responsive admin panel
+with auto creation database. Do not use any json data to store any entry, just mograte into sql database. becuase someday i will make a movie website taht can be supported to this admin panel soon.
+
+Cretae A login Credintials alsl
+
+The following servers in the json data specialy the embeded is just and exmaple or a palceholder but the id are not.
+
+This panel was uploaded into infinityfree so make it more compatible
+
+APIKEY
+ec926176bf467b3f7735e3154238c161
+'bb51e18edb221e87a05f90c2eb456069
+
+
+instruction:
+
+
+Create a modern admin panel with dashbaord for content managent.
+
+Structural idea:
+
+sidebar content: ✅
+1. Dashbaord
+2. Manage Entries
+3. Add new Entry
+4. Bulk Entry
+
+Dashbaord content✅
+1. Real time total of entries
+2. Realtime total of movies
+3. Realtime total of series
+4. Realtime total of live tv
+5. Graphical statistics and Accumolated storage data
+
+Manage Entry Content✅
+1. Preview Image of the entry 
+2. checbox  for bulk delete if needed
+3. individual delete entry
+4. edit entry with add server if needed
+5. add server shortvut for movies only
+6. limit 10 preview image
+7. paginated nummber if tablet limit 5-3 then next button to proceed 6- so on
+like this
+<< 1,2,3,4,5 >>
+in small screen like 4 inches phone
+just use nexta nd prev button to navigate the page
+8. Button for removed duplicates
+
+Add new entry content✅
+1. dropdown selection of catveory or a tab for catevory
+Movies, Tv Series, Live Tv
+2. Input manual fied that exact field of tye json data
+
+Bulk Entry✅
+1. The list of the available embeded servers with check box to be enable or not to include in entry generation
+2. Use By Tab format the selection of the 2 apikey i provided
+2. first tab will be dropdown of Movie or Tv series
+When i click Movie I just input the tmdb id then generate. It will generate all the the meta data and teh enable embeded server automatcially, If i chose tv series i just input tmdb id of tv series the generate it will gennerate all the meta data, season, episode and each epside has the injwcted emveded server as enabaled
+3. Other tab The RegionalGeneration with dropdown of 
+Movie, Series and Both movie and serues
+below is the dropdow of year from latest to oldest year
+Another Dropdown of teh follwong regipnal or selectipm
+
+1. Search Mode - if i choose this there will be a search box query so taht i can only seqrch the entry then the entry will show via image preview and a generate button below
+2. Hollywood - if i choose this, the seach bar will hide
+3. Kdrama
+4. Cdrama
+5. Japanese drama
+6. Pinoy
+7. Indian
+8. turkey
+9. Thai
+10. Korena varoety show
+11. Anime
+12. Cartoon/family
+13. Animation
+
+4. another tab - is for the genre genration jist a dropdown of all the avaipable genre in tmdb and dropdown pf the year and dropdown pf movie, seris, both movie or series then input if how many pages
+20 per page and unlimited input number to the maximum of 1000 pages.
+
+
+
+
+MAKE SURE THIS PLAN CAN BE INTEGRATE FOR MY ANDROID APPLICATION soon
+
+
+
